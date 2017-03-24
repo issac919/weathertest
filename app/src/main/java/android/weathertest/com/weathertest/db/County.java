@@ -1,11 +1,13 @@
 package android.weathertest.com.weathertest.db;
 
+import org.litepal.crud.DataSupport;
+
 /**
  * Created by Administrator on 2017/3/23.
  */
-public class County {
+public class County extends DataSupport {
     private int id;
-    private  String CounryName;
+    private  String CountyName;
     private String WeatherId;
     private  int cityId;
 
@@ -17,12 +19,12 @@ public class County {
         this.id = id;
     }
 
-    public String getCounryName() {
-        return CounryName;
+    public String getCountyName() {
+        return CountyName;
     }
 
-    public void setCounryName(String counryName) {
-        CounryName = counryName;
+    public void setCountyName(String counryName) {
+        CountyName = counryName;
     }
 
     public String getWeatherId() {
